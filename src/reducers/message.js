@@ -6,7 +6,6 @@ var initialState = Message.MSG_WELLCOM;
 const message = (state = initialState, action) => {
     switch (action.type) {
         case types.CHANGE_MESSAGE:
-            console.log(action);
             state = action.message;
             return state;
         default:
